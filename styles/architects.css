@@ -159,14 +159,69 @@ main {
     justify-content: space-evenly;
 }
 
-
 .sponsors-img-container img{
     width: 165px;
 }
 
+/* Feature Section style */
+.feature{
+    gap: 100px;
+    display: flex;
+    margin-top: 130px;
+}
 
-.hide{
-    display: none;
+.feature-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature .section-title{
+    padding-left: 20px;
+    border-left: 5px solid #ff900e;
+}
+
+.feature-image img{
+    height: 90%;
+    margin-left: 100px;
+}
+
+.ten-year-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-year-badge h2{
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 700;
+}
+.ten-year-badge p{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.footer{
+    background-color: antiquewhite;
+    text-align: center;
+    max-width: 1440px;
+    margin: 0px auto 100px;
+    border-radius: 8px;
+    padding: 30px 0px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 
@@ -185,11 +240,31 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container{
+    .sponsors-img-container,
+    .feature{
       flex-direction: column;
     }
     .teams-img-container{
         grid-template-columns: 1fr;
+    }
+
+    .ten-year-badge{
+        position: static;
+        max-width: 300px;
+        padding: 5px;
+        margin: 0 auto 10px;
+    }
+    .ten-year-badge h2{
+        font-size: 2.5rem;
+        margin: 5px;
+    }
+    .ten-year-badge p{
+        font-size: 1.25rem;
+    }
+
+    .feature-image img{
+        width: 100%;
+        margin-left: 0;
     }
     .banner-title {
       margin: 20px 0px 0px;
@@ -212,6 +287,23 @@ main {
     .facts-card-container{
         gap: 20px;
     }
+    .feature,
+    .facts-card-container{
+        margin-top: 0;
+    }
+    .footer{
+        margin-bottom: 50px;
+    }
+    .middle{
+        padding: 0px 20px;
+        margin: 0px;
+    }
+    .section-title{
+        margin: 10px 0px 15px 0px;
+    }
+    .feature{
+        gap: 0px;
+    }
   }
 
 
@@ -223,7 +315,8 @@ main {
   }
   nav,
   .teams-container,
-  .sponsors-img-container{
+  .sponsors-img-container,
+  .feature{
     flex-direction: column;
   }
   .banner-title {
@@ -233,5 +326,15 @@ main {
   .nav-title {
     margin: 0px 0px 20px 0px;
     font-size: 35px;
+  }
+  .feature{
+    gap: 0px;
+    margin: 20px 0px 0px;
+  }
+  header h3{
+    margin: 0px 0px 10px 0px;
+  }
+  .facts-card-container{
+    margin-top: 0;
   }
 }
